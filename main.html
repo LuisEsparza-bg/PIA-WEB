@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prueba Formularios Luis</title>
+</head>
+<body>
+    <form action="#" method="get" target="_blank">
+        <fieldset>
+            <legend>Información del paciente</legend>
+            <p>Nombre completo: <input type="text" name="NombreCompleto" required value="Luis Angel Missael Esparza López"/> </p>
+            <p>Fecha de nacimiento: <input type="date" name="FechaNacimiento" required value="1999-09-01"/> </p>
+            <p>Genero: 
+                <input type="radio" name="genero" value="M" required /> Masculino
+                <input type="radio" name="genero" value="F" required /> Femenino
+            </p>
+
+
+            <p>Tipo de Sangre: 
+                <input type="radio" name="tiposangre" value="A" /> A+
+                <input type="radio" name="tiposangre" value="B" /> B-
+                <input type="radio" name="tiposangre" value="Oneg" /> O-
+                <input type="radio" name="tiposangre" value="Opos" /> O+
+            </p>
+
+            <p>Telefono: <input type="tel" name="Teléfono" placeholder="Introduce tu número de teléfono aquí" size="28"></p>
+            <p>Correo: <input type="email" name="Correo"></p>
+        </fieldset>
+        <fieldset>
+            <legend>¿Qué posición juegas en LoL? </legend>
+            <p>
+                Elo:
+                <input type="radio" name="ELO" value="hierro" /> Hierro
+                <input type="radio" name="ELO" value="plata" /> Plata
+                <input type="radio" name="ELO" value="oro" /> Oro
+                <input type="radio" name="ELO" value="platino" /> Platino
+                <input type="radio" name="ELO" value="diamante" /> Diamante
+                <input type="radio" name="ELO" value="maestro" /> Maestro
+                <input type="radio" name="ELO" value="granmaestro" /> Gran Maestro
+                <input type="radio" name="ELO" value="challenger" /> Challenger
+            </p>
+
+            <p>
+                Posiciones que juegas: <br>
+                <input type="checkbox" name="Top"/> Top <br>
+                <input type="checkbox" name="Jg"/> Jungla <br>
+                <input type="checkbox" name="Mid"/> Mid <br>
+                <input type="checkbox" name="ADC"/> ADcarry <br>
+                <input type="checkbox" name="Support"/> Support 
+            </p>
+
+            <p> Color Favorito <input type="color" name="colorfav"></p>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar Datos" />   <!-- El Submit es diferente al boton-->
+        <input type="reset" value="Reset Datos" />
+    </form>
+
+    <script type="text/javascript" src="main.js"></script>
+    
+
+
+
+
+</html>

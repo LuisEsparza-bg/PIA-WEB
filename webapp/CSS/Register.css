@@ -1,0 +1,148 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background-color: rgb(25, 95, 153);
+}
+
+.cuadroInicial{
+  padding: 50px;
+  width:90%;
+  height: 200;
+  background-color: rgb(29, 29, 29);
+  color:whitesmoke;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-left: 2%; 
+}
+
+.tituloInicial{
+  background-color: rgb(29, 29, 29);
+  margin-left: 10%;
+  width: 80%;
+  color:whitesmoke;   
+  padding: 10px;
+  text-align:center;
+}
+
+.textBoxLogIn{
+  margin-left: 15%;
+  width: 70%;
+  background-color: rgb(29, 29, 29);
+  color:rgb(255, 255, 255);
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+}
+
+.textLogIn{
+  margin-left: 15%;
+}
+
+.preguntaRegistro{
+  margin-top: 10%;
+  padding-right: 20px;
+}
+
+.botonRegistro{
+  margin-top: 0px;
+}
+
+.FirstFooter {
+  background-color: rgb(0, 0, 0);
+  bottom: 0;
+  width: 100%;
+}
+
+.LogFooter {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.EstiloFooter{
+  width:100%;
+  margin:1% 0%;
+  padding: 0% 0%;
+  color:gray;
+  font-size:0.8em;
+}
+
+#Copy{
+  background-color: rgb(29, 29, 29);
+  padding: 2px;
+  margin-bottom: 0px;
+}
+
+
+
+
+.modal-content{
+  background-color:rgb(29, 29, 29);
+  border-radius: 20px;
+}
+
+.modal-header{
+  color: white;
+  background-color: whitesmoke(29, 29, 29);
+}
+
+.iconClose{
+  color: white;
+  
+}
+
+.close:hover{
+  color: white;
+  background-color: red;
+  border-top-right-radius: 20px;
+}
+
+.modal-body{
+  background-color:rgb(29, 29, 29);
+}
+
+.textBoxModal{
+  background-color:rgb(29, 29, 29) !important;
+  color: white !important;
+}
+
+input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: white !important;
+}
+
+.modal-footer{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-sucess{
+  color: white;
+  background-color:rgb(42, 139, 79);
+}
+.btn-sucess:hover{
+  background-color: darkgreen;
+}
+
+.textoRegistro{
+  color: white;
+}
+
+.dateTPModal{
+  background-color: rgb(29, 29, 29) !important;
+  color: white !important;
+
+}
+
+.datepicker{
+  background-color:rgb(29, 29, 29) !important;
+  color: white !important;
+ 
+}
+
+

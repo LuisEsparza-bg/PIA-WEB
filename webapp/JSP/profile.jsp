@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Formularios Luis</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body class="Background">
+
+  
+
+  
+  <nav class="navbar fixed-top navbar-expand-lg NavbarStyle"> 
+   <img src="../Images/Tilted Forum-logos_white.png" class="imagenNavBar" alt="REDDOT icon">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="NavbarText nav-link" href="../JSP/home.jsp">Home <span class="sr-only"></span></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="NavbarText nav-link" href="../JSP/Register.jsp">Log out <span class="sr-only"></span></a>
+        </li>
+      
+        <div class=" DropDownNavBar dropdown show">
+          <a class=" btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+          >
+            Post
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" >
+            <a class="dropdown-item" href="../JSP/newPost.jsp"><img src="../Images/6165290.png" class="imagenDropdown"/> New Post</a>
+            <a class="dropdown-item" href="#"><img src="../Images/my-post-1.png" class="imagenDropdown"/> My Post</a>
+            <a class="dropdown-item" href="#"><img src="../Images/img_186761.png" class="imagenDropdown"/> Edit Post</a>
+          </div>
+        </div>
+         
+        
+         <form class="form-inline my-2 my-lg-0">
+            <input class="CenterSearchNavbar form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit" formaction="../JSP/userSearch.jsp"> Search</button>
+                <button class="btn btn-secondary my-2 my-sm-0 " type="submit" formaction="../JSP/advancedSearch.jsp" style=" margin-left: .2rem;">Advanced Search</button>
+            </form>
+
+      </ul>
+      
+    </div>
+  </nav>
+      
+
+  <div class="ProfileContainer container bootstrap snippets bootdey" >
+    <h1 class="ProfileText" style="margin-top:13rem;">Profile</h1>
+      <hr>
+	<div class="row" >
+      <!-- left column -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <img src="../Images/0c9df0c6dd4b4de7463d8211913e416b_c5_720x720.jpeg" class="ProfilePhoto avatar" alt="avatar">
+          <p class="ProfileText">PHOTO URL:</p>
+          
+          <input type="text" class=" ProfileText form-control" placeholder="Link de la foto" value="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/19af6bed4c6f7f6dbc541470792d44dd~c5_720x720.jpeg?x-expires=1679515200&x-signature=RkUf%2BLWjp3yLrFw8UCCiRLbhhHs%3D">
+        </div>
+      </div>
+      
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+        <div class="ProfileValidate alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert"> x </a> 
+          <p class="ValidateText"> Alert for <strong>validations</strong></p>
+        </div>
+        <h3 class="ProfileText">Personal info</h3>
+        
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label class=" ProfileText col-lg-3 control-label">Username:</label>
+            <div class="col-lg-8">
+              <input class="textBoxLogIn form-control" type="text" value="LuisMissael">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="ProfileText col-lg-3 control-label">Password:</label>
+            <div class="col-lg-8">
+              <input class="textBoxLogIn form-control" type="password" value="*******">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="ProfileText col-lg-3 control-label">First Name:</label>
+            <div class="col-lg-8">
+              <input class="textBoxLogIn form-control" type="text" value="Luis Angel Missael">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="ProfileText col-lg-3 control-label">Last Name:</label>
+            <div class="col-lg-8">
+              <input class="textBoxLogIn form-control" type="text" value="Esparza">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="ProfileText col-lg-3 control-label">Last Name 2:</label>
+            <div class="col-lg-8">
+              <input class="textBoxLogIn form-control" type="text" value="López">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="ProfileText col-lg-3 control-label">Email:</label>
+            <div class="col-lg-8">
+              <input class="textBoxLogIn form-control" type="email" value="luis.esparzalz@uanl.edu.mx">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="ProfileText col-lg-3 control-label">Edad:</label>
+            <div class="col-lg-8">
+              <input class="textBoxLogIn form-control" type="text" value="23" disabled>
+              <br>
+              <p class="ProfileText"> Select your birthday: <input type="date" class="" name="FechaNacimiento" required value="1999-09-01"> </p>
+              <br>
+              <br>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-lg-8">
+                <button type=" button" class="ButtonColor Nicebutton">Save Changes</button>
+            </div>
+          </div>
+          
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+<hr>
+
+
+    
+
+
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/jquery.js"></script>
+    
+    <br>
+
+
+</body>
+
+<footer class="FooterCenterBottom">
+  <div class="FirstFooter">
+      <div class="EstiloFooter row">
+          <div class="col"> <p>Authors: </p> </div>
+          <div class="col"> <p>Email:</p></div>          
+          <div class="col"> Phone: </div>      
+             
+      </div>
+
+      <div class="EstiloFooter row"> 
+          <div class="col"> <p>Luis Angel Missael Esparza Lopez</p> </div>
+          <div class="col"> <p><a href="email:luis.esparzalz@uanl.edu.mx">luis.esparzalz@uanl.edu.mx</a></p> </div>
+          <div class="col">81561654891</div>   
+            
+      </div>
+      
+      <div class="EstiloFooter row"> 
+          <div class="col"> <p>Maximiliano Molina Alvarado </p> </div>
+          <div class="col"> <p><a href="email:maximiliano.molinaao@uanl.edu.mx">maximiliano.molinaao@uanl.edu.mx</a></p> </div>
+          <div class="col">19841561198</div>  
+          
+      </div>
+      
+      <div class="EstiloFooter" id="Copy">   
+          <center>
+          <p>Copyright © 2023 - All rights reserved || Designed By: Luis & Max. </p> 
+          </center>                   
+      </div>                
+  </div>
+</footer>
+
+</html>
